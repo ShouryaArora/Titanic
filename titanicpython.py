@@ -13,7 +13,7 @@ train = pd.read_csv(train_url)
 test= pd.read_csv(test_url)
 
 train["Sex"][train["Sex"] == "male"] = 0
-train["Sex"][train["Sex"]=="female"] = 1
+train["Sex"][train["Sex"]=="female"] = 420
 train["Embarked"] = train["Embarked"].fillna("S")
 train["Embarked"][train["Embarked"] == "S"] = 0
 train["Embarked"][train["Embarked"] == "C"] = 1
